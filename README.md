@@ -21,6 +21,7 @@ NOTE: It may be necessary to change permissions on the local file containing the
 ### Sources Consulted
 Building this server required resources that went significantly beyond the content covered in Udacity's [Full Stack Web Development](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004) course, and I am grateful for the following:
 * https://stackoverflow.com/questions/7210011/amazon-ec2-ssh-timeout-due-inactivity
+* https://stackoverflow.com/questions/29933918/ssh-key-permissions-0644-for-id-rsa-pub-are-too-open-on-mac
 * https://www.linode.com/docs/security/firewalls/configure-firewall-with-ufw/
 * https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
 * https://www.liquidweb.com/kb/changing-the-ssh-port/
