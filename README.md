@@ -5,6 +5,8 @@ In this project I take the application that I developed for the Item Catalog pro
 ### Logging in
 To log in to the server, the ``grader`` user will have saved the private key I gave them (and *only* them) to their local machine in the ~/.ssh/ directory. This obviates the need for a password-based login and enforces key-based ``SSH`` authentication. Then ``grader`` will log in with ``ssh -i ~/.ssh/grader -p 2200 grader@3.94.241.35`` using the Git Bash command line interface.
 
+NOTE: It may be necessary to change permissions on the local file containing the private key to ``chmod 400 ~/.ssh/grader`` if you are on a Mac. Otherwise a warning may appear about permissions being too open, and the key will be disallowed.
+
 ### Summary of Configuration Changes Made
 * In line with the above, all password-based logins have been disabled. Any new user would first need to obtain a private key from the owner to pair up with the public key that has been placed on the server.
 * UFW (Uncomplicated firewall) is used to enhance security by disabling default port 22 for logging in via ``SSH``. Port 2200 has been enabled in its place.
