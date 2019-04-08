@@ -1,6 +1,6 @@
 ## Linux Server Configuration
 
-In this project I take the application that I developed for the Item Catalog project, [Music Catalog](https://github.com/tipcat/item-catalog), and place it onto a public Ubuntu Linux web server, while also securing the back-end from potential intruders. The application is hosted at [AWS Lightsail](https://aws.amazon.com/lightsail/) via the IP address ``3.94.214.35`` and may be viewed here: http://3.94.214.35.xip.io/. The ``xip.io`` suffix is necessary to conform to Google's requirements for authenticating the user via OAuth 2.0.
+In this project I take the application that I developed for the Item Catalog project, [Item Catalog](https://github.com/tipcat/item-catalog), and place it onto a public Ubuntu Linux web server, while also securing the back-end from potential intruders. The application is hosted at [AWS Lightsail](https://aws.amazon.com/lightsail/) via the IP address ``3.94.214.35`` and may be viewed here: http://3.94.214.35.xip.io/. The ``xip.io`` suffix is necessary to conform to Google's requirements for authenticating the user via OAuth 2.0.
 
 ### Logging in
 To log in to the server, the ``grader`` user will have saved the private key I gave them (and *only* them) to their local machine. This obviates the need for a password-based login and enforces key-based ``SSH`` authentication. Then ``grader`` will log in with ``ssh -i ~/.ssh/udacity_key.rsa -p 2200 grader@3.94.241.35`` using the Git Bash command line interface.
