@@ -24,6 +24,7 @@ Building this server required resources that went significantly beyond the conte
 * https://stackoverflow.com/questions/29933918/ssh-key-permissions-0644-for-id-rsa-pub-are-too-open-on-mac
 * https://www.linode.com/docs/security/firewalls/configure-firewall-with-ufw/
 * https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands
+* https://www.youtube.com/watch?v=-J9wUW5NhOQ
 * https://www.liquidweb.com/kb/changing-the-ssh-port/
 * https://askubuntu.com/questions/147241/execute-sudo-without-password
 * https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e
