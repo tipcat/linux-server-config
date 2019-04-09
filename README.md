@@ -12,7 +12,7 @@ NOTE: It may be necessary to change permissions on the local file containing the
 * UFW (Uncomplicated firewall) is used to enhance security by disabling default port 22 for logging in via ``SSH``. Port 2200 has been enabled in its place.
 * To further enhance security, root login has been disabled.
 * The ``grader`` user has been given ``sudo`` permissions to evaluate this project. As with logging in, no password is needed to perform ``sudo`` operations.
-* All packages have been updated and are set to auto-update.
+* All packages have been updated as of 8 April 2019.
 * Used UFW to open port 80 for ``HTTP`` connections and port 123 for ``NTP``. Apart from port 2200 these are the *only* open ports.
 * All packages needed to make the application code work properly have been installed: ``python-pip, postgresql, psycopg2, flask, Flask-SQLAlchemy, requests, httplib2`` and ``oauth2client``.
 * PostgreSQL has been substituted in place of SQLite for more robust security. A special user named ``catalog`` has been created to effect proper creation of the database. Only the ``catalog`` user has power over the database; all public access has been revoked. Additionally, the original Python application code has been modified to initialize the database via PostgreSQL.
