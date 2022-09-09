@@ -1,6 +1,8 @@
 ## Linux Server Configuration
 
-In this project I take the [Item Catalog](https://github.com/tipcat/item-catalog) and place it onto a public Ubuntu Linux web server, while also securing the back-end from potential intruders. The application is hosted at [AWS Lightsail](https://aws.amazon.com/lightsail/) via the IP address ``3.94.214.35`` and may be viewed here: http://3.94.214.35.xip.io/. The ``xip.io`` suffix is necessary to conform to Google's requirements for authenticating the user via OAuth 2.0.
+In this project I take the [Item Catalog](https://github.com/tipcat/item-catalog) and place it onto a public Ubuntu Linux web server, while also securing the back-end from potential intruders. 
+
+###The application is hosted at [AWS Lightsail](https://aws.amazon.com/lightsail/) via the IP address ``3.94.214.35`` and may be viewed here: http://3.94.214.35.xip.io/. The ``xip.io`` suffix is necessary to conform to Google's requirements for authenticating the user via OAuth 2.0.
 
 ### Logging in
 To log in to the server, the ``grader`` user will have saved the private key I gave them (and *only* them) to their local machine in the ~/.ssh/ directory. This obviates the need for a password-based login and enforces key-based ``SSH`` authentication. Assuming the private key has been saved under the name ``grader`` with no file extension, then the user named ``grader`` will log in with ``ssh -i ~/.ssh/grader -p 2200 grader@3.94.241.35`` using the Git Bash command line interface.
@@ -19,7 +21,6 @@ NOTE: It may be necessary to change permissions on the local file containing the
 * Apache is used for the server and Web Server Gateway Interface (WSGI) is used for calling the application code. These have been installed via the ``apache2`` and ``libapache2-mod-wsgi python-dev`` packages.
 
 ### Sources Consulted
-Building this server required resources that went significantly beyond the content covered in Udacity's [Full Stack Web Development](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004) course, and I am grateful for the following:
 * https://stackoverflow.com/questions/7210011/amazon-ec2-ssh-timeout-due-inactivity
 * https://stackoverflow.com/questions/29933918/ssh-key-permissions-0644-for-id-rsa-pub-are-too-open-on-mac
 * https://www.linode.com/docs/security/firewalls/configure-firewall-with-ufw/
